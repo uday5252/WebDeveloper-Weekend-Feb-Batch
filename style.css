@@ -1,0 +1,63 @@
+#parent
+{
+    border: 1px solid darkgreen;
+    width: 700px;
+    height: 520px;
+    background-color: green;
+
+    /* It will keep all the information in a single line */
+    /* The default flex diection is row */
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+    /* justify-content: ==> arrange the data in x axis ; */
+    /* justify-content: center; */
+    /* align-items: ==> arrange the data in y axis; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+
+}
+
+#first
+{
+    border: 1px solid magenta;
+    width: 200px;
+    height: 100px;
+    background-color: magenta;
+    margin: 10px;
+}
+
+#second
+{
+    border: 1px solid gold;
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+    margin: 10px;
+}
+
+#third
+{
+    border: 1px solid lightsalmon;
+    width: 200px;
+    height: 100px;
+    background-color: lightsalmon;
+    margin: 10px;
+}
+
+#fourth
+{
+    border: 1px solid darkred;
+    width: 200px;
+    height: 100px;
+    background-color: darkred;
+    margin: 10px;
+}
+
+#fifth
+{
+    border: 1px solid white;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+}
