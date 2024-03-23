@@ -8,10 +8,12 @@ img{
 div{
     display: grid;
     grid-template-areas: 
-    "firstimage secondimage thirdimage thirdimage"
-    "sixthimage secondimage fourthimage fourthimage"
-    "fifthimage fifthimage fifthimage fifthimage";
+    "firstimage firstimage secondimage"
+    "fourthimage fifthimage secondimage"
+    "sixthimage sixthimage thirdimage";
     grid-gap: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #first
