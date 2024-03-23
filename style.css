@@ -1,13 +1,38 @@
-p{
-    border: 1px dotted gray;
-    width: 250px;
-    padding: 15px;
+#first, #second, #third
+{
+    border: 1px solid black;
+    width: 350px;
+    height: 480px;
+    border-radius: 20px;
 }
 
-div{
+#outer
+{
+    height: 600px;
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* justify-content: space-between; */
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    width: 350px;
+    height: 270px;
+    border-radius: 20px;
+}
+
+h2, p{
+    text-align: center;
+}
+
+#inner
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    margin: 5px;
+    font-size: 22px;
 }
