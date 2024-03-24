@@ -2,34 +2,42 @@ body{
     background-color: gray;
 }
 
+#floor{
+    border: 1px solid black;
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
 ul{
     display: flex;
     list-style-type: none;
+    margin-left: 150px;
 }
 
 li{
-    font-size: 40px;
+    border: 1px solid white;
+    width: 15px;
+    height: 15px;
     margin: 10px;
-    color: white;
 
-    animation-name: lighting;
-    animation-duration: 0.8s;
+    border-radius: 50px;
+
+    animation-name: bouncingballs;
+    animation-duration: 0.7s;
     animation-iteration-count: infinite;
 }
 
-
-
-@keyframes lighting {
-    
+@keyframes bouncingballs {
     0%{
-        color: white;
+        transform: translateY(0px);
     }
 
     100%{
-        color: goldenrod;
-        text-shadow: 3px 3px 9px lightcoral;
+        transform: translateY(200px);
     }
-
 }
 
 li:nth-child(1)
@@ -56,19 +64,3 @@ li:nth-child(5)
 {
     animation-delay: 1.0s;
 }
-
-li:nth-child(6)
-{
-    animation-delay: 1.2s;
-}
-
-li:nth-child(7)
-{
-    animation-delay: 1.4s;
-}
-
-li:nth-child(8)
-{
-    animation-delay: 1.6s;
-}
-
