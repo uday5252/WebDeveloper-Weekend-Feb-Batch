@@ -1,31 +1,49 @@
-/* 
-div
-{
-    border: 1px solid red;
-    width: 300px;
-    height: 300px;
-    background-color: red;
-    border-radius: 200px;
+div{
+    border: 1px solid orange;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-left: 500px;
+    margin-top: 200px;
 }
+/* 
+div:hover{
+    transform-origin: left;
+    transform: rotate(-45deg);
 
-div:hover
-{
-  background-color: green;  
-  transition-property: background-color;
-  transition-duration: 4000ms;
+    transition-property: transform;
+    transition-duration: 2s;
 } */
 
-h1{
-    color: red;
-    font-size: 60px;
-    background-color: lightcoral;
-}
+/* div:hover{
+    transform: translateX(-300px);
+    transition-property: transform;
+    transition-duration: 2s;
+} */
 
-h1:hover{
-    color: green;
-    background-color: lightgreen;
+/* div:hover{
+    transform: translateY(-300px);
+    transition-property: transform;
+    transition-duration: 2s;
+} */
 
-    transition-property: color background-color;
-    transition-duration: 3000ms;
-    transition-delay: 2000ms;
-}
+/* div:hover{
+    transform: translate(300px, 400px);
+    transition-property: transform;
+    transition-duration: 2s;
+} */
+/* 
+div:hover{
+    transform: scaleX(3);
+} */
+
+/* div:hover{
+    transform: scaleY(3);
+} */
+
+/* div:hover{
+    transform: scale(4, 3.5);
+    transition-property: transform;
+    transition-duration: 2s;
+} */
+
