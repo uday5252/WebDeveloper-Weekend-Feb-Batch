@@ -1,49 +1,43 @@
+/* the animation i want to create is ==> The box should cover a distance of 500px in x axis 
+simulatenoausly it should keep rotating by 45 deg.
+This activity should happn infinite no of times.
+
+If we want to create an animation we need to @keyframes
+*/
+
 div{
     border: 1px solid orange;
     width: 100px;
     height: 100px;
     background-color: orange;
-    margin-left: 500px;
-    margin-top: 200px;
+
+    animation-name: rotatingandmovingbox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-/* 
-div:hover{
-    transform-origin: left;
-    transform: rotate(-45deg);
 
-    transition-property: transform;
-    transition-duration: 2s;
-} */
 
-/* div:hover{
-    transform: translateX(-300px);
-    transition-property: transform;
-    transition-duration: 2s;
-} */
 
-/* div:hover{
-    transform: translateY(-300px);
-    transition-property: transform;
-    transition-duration: 2s;
-} */
+@keyframes rotatingandmovingbox{
+    0%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
 
-/* div:hover{
-    transform: translate(300px, 400px);
-    transition-property: transform;
-    transition-duration: 2s;
-} */
-/* 
-div:hover{
-    transform: scaleX(3);
-} */
+    90%
+    {
+        transform: translateY(200px) rotate(30deg);
+    }
 
-/* div:hover{
-    transform: scaleY(3);
-} */
+    100%{
+        transform: translateX(500px) rotate(45deg);
+    }
+}
 
-/* div:hover{
-    transform: scale(4, 3.5);
-    transition-property: transform;
-    transition-duration: 2s;
-} */
+/* Whenever we see percentage values in animation, always refer the animation duration  */
+/* 3s = total time */
 
+/* 0% = 0s
+10% = 0.3s
+25% = 0.75s
+50% = 1.5s
+100% = 3s */
