@@ -1,43 +1,57 @@
-/* the animation i want to create is ==> The box should cover a distance of 500px in x axis 
-simulatenoausly it should keep rotating by 45 deg.
-This activity should happn infinite no of times.
-
-If we want to create an animation we need to @keyframes
-*/
+body{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 div{
-    border: 1px solid orange;
+    border: 1px solid red;
     width: 100px;
     height: 100px;
-    background-color: orange;
+    background-color: red;
+    position: relative;
 
-    animation-name: rotatingandmovingbox;
-    animation-duration: 3s;
+    transform: rotate(45deg);
+
+    animation-name: heartbeat;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
+div::before{
+    position: absolute;
+    content: "";
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    border-radius: 100px;
+
+    transform: translateY(-50px);
+}
 
 
-@keyframes rotatingandmovingbox{
+div::after{
+    position: absolute;
+    content: "";
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+
+    transform: translateX(-50px);
+}
+
+@keyframes heartbeat {
     0%{
-        transform: translateX(0px) translateY(0px) rotate(0deg);
-    }
-
-    90%
-    {
-        transform: translateY(200px) rotate(30deg);
+        transform: scale(1) rotate(45deg);
     }
 
     100%{
-        transform: translateX(500px) rotate(45deg);
+        transform: scale(1.1) rotate(45deg);
     }
+    
 }
-
-/* Whenever we see percentage values in animation, always refer the animation duration  */
-/* 3s = total time */
-
-/* 0% = 0s
-10% = 0.3s
-25% = 0.75s
-50% = 1.5s
-100% = 3s */
